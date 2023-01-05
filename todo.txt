@@ -1,0 +1,28 @@
+XMAS E-COMMERCE
+
+Header
+	Cart
+	Search
+	Menu
+
+
+Home page/catalog
+Carousel
+	Item
+		Select Variant
+Pagination
+
+ProductDetails
+	ProductCard
+		Navigation prev & next product
+		?Gallery photos
+		Rating of reviews
+		Select Variant
+	Look at others
+		Sort
+			by price
+			by newest
+			by oldest
+	Cart
+		
+

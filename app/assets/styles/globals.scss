@@ -1,0 +1,9 @@
+@import 'app/assets/styles/variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-base text-black;
+}
