@@ -4,9 +4,11 @@ import { FC } from 'react'
 import { menu } from './menu.data'
 import MenuItem  from './menu-item/MenuItem'
 
+import styles from './Menu.module.scss'
+
 const Menu: FC = () => {
 	return (
-		<div>
+		<div className={styles.menu}>
 			<Link href='/'>
 				<Image
 					src='/images/logo.png'

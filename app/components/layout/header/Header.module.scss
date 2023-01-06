@@ -1,7 +1,4 @@
 .header {
-	@apply flex w-full justify-end;
+	@apply flex w-full justify-between;
 
-	> nav {
-		@apply flex items-center gap-5;
-	}
 }
