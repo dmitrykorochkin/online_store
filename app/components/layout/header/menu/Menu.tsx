@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
+import { menu } from './menu.data'
+import MenuItem  from './menu-item/MenuItem'
 
 const Menu: FC = () => {
 	return (
@@ -16,9 +18,7 @@ const Menu: FC = () => {
 
 			<nav>
 				<ul>
-					<li>
-						<Link href='/'>Navigation</Link>
-					</li>
+                    {menu.map(item => <MenuItem key={item.link} item={item}/>)}
 				</ul>
 			</nav>
 		</div>

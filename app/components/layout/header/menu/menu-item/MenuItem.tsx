@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Link from 'next/link'
 import { IMenuLink } from './menu-item.interface'
 
 interface IMenuItem {
@@ -6,7 +7,9 @@ interface IMenuItem {
 }
 
 const MenuItem: FC<IMenuItem> = ({item}) => {
-	return <div>MenuItem</div>
+	return <li>
+        <Link href={item.link}>{item.name}</Link>
+    </li>
 }
 
 export default MenuItem
