@@ -1,4 +1,4 @@
-import {Input} from 'antd'
+import { Input } from 'antd'
 import { FC, useState } from 'react'
 
 import styles from './Search.module.scss'
