@@ -1,8 +1,10 @@
 .layout {
+	@apply relative;
 	> main {
 		@apply  bg-white py-8 px-10;
 
 		> .content {
 		}
 	}
+
 }

@@ -1,0 +1,11 @@
+.search {
+    @apply relative w-2/6;
+    > div {
+        @apply relative;
+    }
+
+    &::before {
+        content: '';
+		@apply bg-light-green w-80 h-80 rounded-full absolute -top-[333%] -left-[20%];
+	}
+}

@@ -1,17 +1,19 @@
 .menu {
     @apply flex items-center gap-3;
 
-    > nav {
-        > ul {
+    >nav {
+        >ul {
             @apply flex items-center gap-5;
-            > li {
-                > a {
+
+            >li {
+                >a {
                     @apply relative uppercase tracking-widest;
 
                     &::after {
-                        content:'';
+                        content: '';
                         @apply absolute left-0 -bottom-3 h-0.5 w-0 bg-black transition-all duration-300;
                     }
+
                     &:hover::after {
                         @apply w-full;
                     }
@@ -20,4 +22,3 @@
         }
     }
 }
-
