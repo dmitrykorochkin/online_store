@@ -18,6 +18,12 @@ const Search: FC = () => {
 					placeholder='Search'
 					onChange={e => setSearchTerm(e.target.value)}
 					value={searchTerm}
+					_focus={{
+						boxShadow: 'none'
+					}}
+					_focusVisible={{
+						borderColor: '#008d64'
+					}}
 				/>
 			</InputGroup>
 		</div>
