@@ -1,6 +1,7 @@
+import { ICartItem } from '@/types/cart.interface'
 import { FC } from 'react'
 
-const CartItem: FC  = () => {
+const CartItem: FC<{item: ICartItem}> = ({item}) => {
   return (
     <div>
       <Image>

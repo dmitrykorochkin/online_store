@@ -1,6 +1,9 @@
-export interface ICartItem {
-  id: 1
-  product: IProduct
-  quantity: number
 
+export interface IProduct {
+  id: number
+  name: string
+  descriptions: string
+  price: number
+  reviews: []
+  images: string[]
 }
