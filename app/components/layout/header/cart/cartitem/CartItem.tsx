@@ -16,7 +16,7 @@ const CartItem: FC<{ item: ICartItem }> = ({ item }) => {
 			<div>
 				<div className={styles.name}>{item.product.name}</div>
 				<div className={styles.price}>
-					{new Intl.NumberFormat(undefined, {
+					{new Intl.NumberFormat('en-US', {
 						style: 'currency',
 						currency: 'USD'
 					}).format(item.product.price)}
