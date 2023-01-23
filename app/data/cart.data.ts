@@ -1,4 +1,4 @@
-import { products } from './../../public/images/products/product.data';
+import { products } from './product.data';
 import { ICartItem } from '@/types/cart.interface';
 export const cart: ICartItem[] = [
   {
