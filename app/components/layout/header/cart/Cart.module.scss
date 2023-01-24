@@ -1,5 +1,4 @@
 .wrapper-cart {
-  @apply relative;
 
   .heading {
     @apply flex items-center;
@@ -13,12 +12,26 @@
     }
   }
 
-  .cart {
-    @apply p-5;
-    .item {}
+  
+}
+.cart {
+  .item {
+    @apply py-6 flex items-center gap-4;
 
-    .name {}
+    .name {
+      @apply tracking-widest font-semibold;
+    }
 
-    .price {}
+    .price {
+      @apply text-sm text-green font-bold;
+    }
+  }
+}
+.footer {
+  >div:first-child {
+    @apply text-sm text-green mb-1;
+  }
+  >div:last-child {
+    @apply font-semibold;
   }
 }
