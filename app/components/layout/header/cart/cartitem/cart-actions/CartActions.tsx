@@ -7,8 +7,7 @@ const CartActions: FC = () => {
 		useNumberInput({
 			step: 1,
 			defaultValue: 1,
-			min: 0,
-			max: 1000
+			min: 1,
 		})
 
 	const inc = getIncrementButtonProps()
