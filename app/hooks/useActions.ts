@@ -1,6 +1,7 @@
 import { cartSlice } from "@/store/slice";
 import { bindActionCreators } from 'redux'
 import { useDispatch } from 'react-redux'
+import { useMemo } from "react";
 
 const rootAction = {
   ...cartSlice.actions
@@ -9,5 +10,5 @@ const rootAction = {
 export const useActions = () => {
   const dispatch = useDispatch() 
 
-  return bindActionCreators(rootAction, dispatch)
+  return useMemo(() => bindActionCreators(rootAction, dispatch), [dispatch])
 }
