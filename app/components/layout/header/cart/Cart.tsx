@@ -21,6 +21,7 @@ const Cart: FC = () => {
 	const btnRef = useRef<HTMLButtonElement>(null)
 
 	const cart = useTypedSelector(state => state.cart.items)
+	const total = cart.reduce((acc, item) => acc +=item.product.price, 0)
 
 	return (
 		<div className={styles['wrapper-cart']}>
@@ -59,7 +60,7 @@ const Cart: FC = () => {
 					>
 						<div className={styles.footer}>
 							<div>Total:</div>
-							<div>$100</div>
+							<div>{total}</div>
 						</div>
 						<Button colorScheme='green'>Checkout</Button>
 					</DrawerFooter>
