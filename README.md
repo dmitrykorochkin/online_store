@@ -1,2 +1,2 @@
-# online_store
+# Оnline_store
 ## Интернет магазин с использованием TypeScript и React
